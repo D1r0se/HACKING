@@ -1,0 +1,55 @@
+SUDO ( EJECUTAR ALGO EN MODO ADMINISTRADOR ) (  SE LE PONE SUDO ANTES DEL COMANDO PARA LLAMAR AL COMANDO CON PERMISO DE ADMINISTRADOR ) ( TE PIDE LA CONTRASEÑA DE ADMINISTRADOR "toor" ) ( SUDO -i USAS EL TERMINAL ROOT PERO NO TE CONVIERTES EN ROOT ) ( COMANDO sudo su KAIZEN ES USAR EL ADMINISTRADOR PARA CAMBIAR AL USUARIO KAIZEN ) 
+ROOT ( ADMINISTRADOR DE EQUIPO / EN GRUPO DE ADMINISTRADORES ) 
+SU ROOT ( PARA CONVERTIRME EN USUARIO ROOT ) 
+
+COMANDO man -- Abrir lista de ayuda ( EJEMPLO man cd ) 
+COMANDO cd -- Movernos entre carpetas ( directorios ) 
+COMANDO cd .. -- Movernos hacia atras en la carpeta anterior ( Directorios Anteriores )
+COMANDO pwd -- Para saber en que carpeta estoy ( directorio )
+COMANDO passwd -- Para cambiar la contraseña de un usuario ( POR EJEMPLO passwd kaizen ) 
+COMANDO sudo nano /home/kali/.zshrc -- Para modificar o crear Alias
+COMANDO ls -la -- Ls es para ver los archivos que hay en modo lista, y -LA es para que muestre tambien los ocultos que aparecen, los ocultos empiezan con un . )
+COMANDO setxkbmap es -- Poner teclado en español 
+COMANDO echo $SHELL -- Saber si usas zsh / bash
+COMANDO uname -a -- Saber que version de Kernel / Linux tenemos ( recomendable no tener nunca el de minelane )
+COMANDO dmesg -- Forma de contactar Kernel contigo de que hay algun problema ( EN ROJO ) 
+COMANDO free -m ( megabytes ) -g ( gigabytes ) -h ( humano ) -- saber la memoria RAM 
+COMANDO cat -- Para ver contenido de un archivo ( cat /etc/passwd para ver todas las contraseñas ) 
+COMANDO sudo fdisk -l -- Para ver los discos que tenemos ( sda1 , sda2... asi se denomina a los discos en LINUX )
+COMANDO whoami -- Para saber que usuario somos ( normalmente kali cuando iniciamos maquina, y no somos root ) 
+COMANDO df -h -- Para saber cuanto te esta ocupando la maquina virtual de espacio o cuanto espacio de disco  tienes
+COMANDO du -- Del directorio o archivo actual te muestra su espacio ( EJEMPLO du /home/kali/Downloads te dice cuanto ocupa la carpeta Downloads y todo lo que contiene -h para GIGA -b BYTES ) 
+COMANDO top -- Para ver el % de memoria que te esta ocupando los procesos abiertos que se estan ejecutando )
+COMANDO netstat -- Servicios o pequeños procesos que ejecuta la maquina en cierto momento para acompañar un proceso , "los ayudantes de los procesos"
+COMANDO touch -- Es para crear un archivo en donde estes, si le pones el . antes ( EJEMPLO .kaizen ) se convierte en archivo oculto ( solo en Kali ) 
+COMANDO nano / vim / vi  -- Editor de archivos de texto por consola ( :wq para salir de escritura en vi/vim ) 
+COMANDO mkdir -- Crear carpeta 
+COMANDO echo -- Repite todo lo que le pones, pero si le pones el simbolo > , va a escribir lo que le pongas al archivo que venga despues ( EJEMPLO echo "Hola" > prueba.txt ) 
+COMANDO rm -- Borrar archivos 
+COMANDO rmdir -- Borrar carpetas 
+COMANDO rm -rf -- Borra todas las carpetas y subcarpetas  ( directorios ) en caso de que las tenga de forma forzosa 
+COMANDO locate -- Para buscar un programa de sistema 
+COMANDO find / - name -- Para buscar un archivo generico en todos los directorios ( ya especificas en que directorio ) 
+COMANDO cp -- Copiar archivos ( EJEMPLO cp users.txt /home y lo mueves a HOME )
+COMANDO mv -- Mover archivos / cambia nombre ( EJEMPLO mv users.txt /home y lo copias a HOME ) ( EJEMPLO mv user.txt contraseñas.txt )  ( se usa sudo si no te lo permite por los derechos de administrador ) 
+COMANDO grep -- Busca todo lo que tengsa la palabra que le incluyas/cadena de caracteres , comandos, archivos...  ( EJEMPLO grep /home/kali *.txt ) 
+COMANDO history -- Para ver el historial de comandos que hemos usado 
+COMANDO chmod -- Dar o quitar permisos ( EJEMPLO chmod o ( OTHERS ) +w ( WRITE ) secure.txt / chmod u ( USERS ) + w+x ( EXECUTE ) secure.txt )  ( chmod o+w secure.txt ) 
+COMANDO chown -- Cambiar propietario ( solo si somos root y si somos nosotros el mismo propietario ) ( EJEMPLO chown pepe prueba.txt )
+COMANDO lsmod -- Para ver los drivers que esta asociado a cierto HARDWARE 
+COMANDO crontab -- Para ver las tareas programadas ( EJEMPLO quiero correr un programa a las 10 de la mañana todos los lunes de cada ABRIL durante los proximos 5 años ) 
+COMANDO apt -- Permite descargar, instala, actualizar y modificar paquetes ( Lo suyo es que usemos siempre SUDO, para que no de problemas ) ( EJEMPLO sudo apt update para buscar actualizaciones de todo generico )  Si quieres descargar algun paquete en concreto es sudo apt install y el nombre del paquete )  ( para ver la lista de lo que tenemos sin actualizar sudo apt list --upgradable ) ( si le pones apt -y full-upgrade le dice que SI a todo ) 
+COMANDO full -upgrade -- Actualiza TODO lo que tienes
+COMANDO autoremove -- Para desistalar los paquetes que ya no necesitas 
+COMANDO ifconfig -- Para ver la configuracion de red ( IP,MAC,INTERFACES,etc...) ( eth0, etch1 ) ( la red principal suele ser la que tiene el numero mas bajo eth0 ) 
+COMANDO sudo nano /etc/network/interfaces -- Para modificar y cambiar la idreccion IP 
+COMANDO ping -- Mostrar la conectividad con una direccion IP o fuera ( EJEMPLO ping www.discord.com ) ( 8.8.8.8 GOOGLE AMERICA / 8.8.4.4 GOOGLE ESPAÑA ) 
+COMANDO export -- Para hacer test ping de forma acortada de la ip que tu le pongas 
+COMANDO dig axfr (dominio) -- Para ver vulneravilidad del DNS de un dominio 
+COMANDO hashidentifier -- Herramienta para descifrar HASHES en KALI 
+COMANDO echo "aG9sYQ==" | base64 -d -- Le pasamos algo cifrado y nos lo descodifica 
+COMANDO echo "hola" | base64  -- Para pasar algo y cifrarlo
+COMANDO gzip -d archivo.gz-- Para descomprimir el archivo 
+COMANDO locate rockyou -- Para localizar el archivo rockyou
+COMANDO sudo updatedb -- Para actualizar la base de datos (locate en este caso)
+COMANDO /usr/share/wordlists/ -- Para ver todos los diccionarios de KALI 
