@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Contraseña - Instagram</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="instagram-logo.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <!-- Logo de Instagram -->
+            <img src="instagram-logo.png" alt="Instagram Logo" class="logo">
+            <h2>Cambiar Contraseña</h2>
+            <form id="passwordForm">
+                <div class="input-box">
+                    <input type="password" id="oldPassword" placeholder="Contraseña antigua" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="newPassword" placeholder="Nueva contraseña" required>
+                </div>
+                <button type="submit">Cambiar contraseña</button>
+            </form>
+            <p id="displayPasswords"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
